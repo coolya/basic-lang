@@ -13,6 +13,10 @@
       </concept>
     </language>
     <language id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language">
+      <concept id="5372831481539198138" name="basic.language.structure.ExpressionStatement" flags="ng" index="1tJtPY">
+        <child id="5372831481539198139" name="expr" index="1tJtPZ" />
+      </concept>
+      <concept id="8857111640020670638" name="basic.language.structure.EqualsExpression" flags="ng" index="1Pwx2M" />
       <concept id="8857111640020672226" name="basic.language.structure.StringLiteral" flags="ng" index="1PwxrY">
         <property id="8857111640020672227" name="value" index="1PwxrZ" />
       </concept>
@@ -20,6 +24,7 @@
         <child id="8857111640020565440" name="value" index="1Pzvns" />
       </concept>
       <concept id="8857111640020496478" name="basic.language.structure.EmptyStatement" flags="ng" index="1Pzfx2" />
+      <concept id="8857111640020600874" name="basic.language.structure.MulExpression" flags="ng" index="1Pzg0Q" />
       <concept id="8857111640020600952" name="basic.language.structure.BinaryExpression" flags="ng" index="1Pzg1$">
         <child id="8857111640020600953" name="left" index="1Pzg1_" />
         <child id="8857111640020600955" name="right" index="1Pzg1B" />
@@ -55,6 +60,38 @@
         </node>
         <node concept="1Pzvmx" id="4Eg8sgnbvLc" role="1Pzg1B">
           <property role="1Pzvmy" value="23443" />
+        </node>
+      </node>
+    </node>
+    <node concept="1PzecQ" id="5TPyr2$PTsV" role="1PzecN">
+      <property role="TrG5h" value="y" />
+      <node concept="1Pzg0Q" id="5TPyr2$PTtX" role="1Pzvns">
+        <node concept="1Pzlup" id="5TPyr2$PTtY" role="1Pzg1_">
+          <node concept="1Pzvmx" id="5TPyr2$PTtk" role="1Pzg1_">
+            <property role="1Pzvmy" value="10" />
+          </node>
+          <node concept="1Pzvmx" id="5TPyr2$PTt$" role="1Pzg1B">
+            <property role="1Pzvmy" value="10" />
+          </node>
+        </node>
+        <node concept="1Pzvmx" id="5TPyr2$PTu8" role="1Pzg1B">
+          <property role="1Pzvmy" value="10" />
+        </node>
+      </node>
+    </node>
+    <node concept="1PzecQ" id="5TPyr2$QJYl" role="1PzecN">
+      <property role="TrG5h" value="z" />
+      <node concept="1Pzvmx" id="5TPyr2$QJYY" role="1Pzvns">
+        <property role="1Pzvmy" value="12" />
+      </node>
+    </node>
+    <node concept="1tJtPY" id="5TPyr2$RuZz" role="1PzecN">
+      <node concept="1Pwx2M" id="5TPyr2$RuZU" role="1tJtPZ">
+        <node concept="1Pzvmx" id="5TPyr2$Rv0d" role="1Pzg1B">
+          <property role="1Pzvmy" value="10" />
+        </node>
+        <node concept="1Pzvmx" id="5TPyr2$RuZy" role="1Pzg1_">
+          <property role="1Pzvmy" value="10" />
         </node>
       </node>
     </node>
