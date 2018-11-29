@@ -10,6 +10,7 @@
     <import index="rav" ref="r:5dfc3e02-565a-434d-9e49-034b8d828033(basic.language.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="n00a" ref="r:404c2401-a7a1-4ef9-9e7d-dc5b25674969(basic.language.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -24,6 +25,13 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -76,6 +84,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695491669778" name="leftAssociative" index="2EmT7a" />
         <child id="8207263695491670784" name="priority" index="2EmURo" />
@@ -112,7 +123,7 @@
   </registry>
   <node concept="24kQdi" id="7FEM1KfpzfJ">
     <property role="3GE5qa" value="stmt" />
-    <ref role="1XX52x" to="rav:7FEM1Kfpz1u" resolve="EmptyStatement" />
+    <ref role="1XX52x" to="rav:7FEM1Kfpz1u" resolve="BEmptyStatement" />
     <node concept="3F0ifn" id="7FEM1KfpzfQ" role="2wV5jI">
       <node concept="VPxyj" id="4Eg8sgnbWYo" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -121,13 +132,27 @@
   </node>
   <node concept="24kQdi" id="7FEM1KfpAYa">
     <property role="3GE5qa" value="stmt" />
-    <ref role="1XX52x" to="rav:7FEM1KfpyGE" resolve="Variable" />
+    <ref role="1XX52x" to="rav:7FEM1KfpyGE" resolve="BVariable" />
     <node concept="3EZMnI" id="7FEM1KfpAYh" role="2wV5jI">
       <node concept="3F0ifn" id="7FEM1KfpAYo" role="3EZMnx">
         <property role="3F0ifm" value="var" />
       </node>
       <node concept="3F0A7n" id="7FEM1KfpAYu" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="6yAr3FnOz98" role="3EZMnx">
+        <node concept="3EZMnI" id="6yAr3FnOz9i" role="_tjki">
+          <node concept="3F0ifn" id="6yAr3FnOz9p" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+            <node concept="11LMrY" id="6yAr3FnPiHo" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="6yAr3FnOz9v" role="3EZMnx">
+            <ref role="1NtTu8" to="rav:6yAr3FnMcxO" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="6yAr3FnOz9l" role="2iSdaV" />
+        </node>
       </node>
       <node concept="3F0ifn" id="7FEM1KfpLWZ" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -139,7 +164,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7FEM1KfpFl5">
-    <ref role="1XX52x" to="rav:7FEM1KfpoUa" resolve="Workbook" />
+    <ref role="1XX52x" to="rav:7FEM1KfpoUa" resolve="BWorkbook" />
     <node concept="3EZMnI" id="7FEM1KfpFl7" role="2wV5jI">
       <node concept="3EZMnI" id="7FEM1KfpGPu" role="3EZMnx">
         <node concept="2iRfu4" id="7FEM1KfpGPv" role="2iSdaV" />
@@ -160,7 +185,7 @@
               <node concept="2ShNRf" id="7FEM1Kfq9ns" role="3clFbG">
                 <node concept="3zrR0B" id="7FEM1KfqauT" role="2ShVmc">
                   <node concept="3Tqbb2" id="7FEM1KfqauV" role="3zrR0E">
-                    <ref role="ehGHo" to="rav:7FEM1Kfpz1u" resolve="EmptyStatement" />
+                    <ref role="ehGHo" to="rav:7FEM1Kfpz1u" resolve="BEmptyStatement" />
                   </node>
                 </node>
               </node>
@@ -172,7 +197,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7FEM1KfpPF4">
-    <ref role="1XX52x" to="rav:7FEM1KfpNQX" resolve="NumberLiteral" />
+    <ref role="1XX52x" to="rav:7FEM1KfpNQX" resolve="BNumberLiteral" />
     <node concept="1kIj98" id="4Eg8sgndHgz" role="2wV5jI">
       <node concept="3F0A7n" id="4Eg8sgndHgD" role="1kIj9b">
         <ref role="1NtTu8" to="rav:7FEM1KfpNQY" resolve="value" />
@@ -181,7 +206,7 @@
   </node>
   <node concept="24kQdi" id="7FEM1KfpZ$n">
     <property role="3GE5qa" value="expr.binary" />
-    <ref role="1XX52x" to="rav:7FEM1KfpWxS" resolve="BinaryExpression" />
+    <ref role="1XX52x" to="rav:7FEM1KfpWxS" resolve="BBinaryExpression" />
     <node concept="1WcQYu" id="5TPyr2$OxOD" role="2wV5jI">
       <node concept="2ElW$n" id="5TPyr2$OxOF" role="2El2Yn">
         <node concept="2OqwBi" id="5TPyr2$Pq_W" role="2EmT7a">
@@ -225,7 +250,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7FEM1KfqdVH">
-    <ref role="1XX52x" to="rav:7FEM1KfqdVy" resolve="StringLiteral" />
+    <ref role="1XX52x" to="rav:7FEM1KfqdVy" resolve="BStringLiteral" />
     <node concept="3EZMnI" id="7FEM1KfqdVJ" role="2wV5jI">
       <node concept="3F0ifn" id="7FEM1KfqdVQ" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
@@ -247,7 +272,7 @@
   </node>
   <node concept="24kQdi" id="4Eg8sgnbvN5">
     <property role="3GE5qa" value="stmt" />
-    <ref role="1XX52x" to="rav:4Eg8sgnbvMU" resolve="ExpressionStatement" />
+    <ref role="1XX52x" to="rav:4Eg8sgnbvMU" resolve="BExpressionStatement" />
     <node concept="1kIj98" id="4Eg8sgndwM9" role="2wV5jI">
       <node concept="3F1sOY" id="4Eg8sgndwMf" role="1kIj9b">
         <ref role="1NtTu8" to="rav:4Eg8sgnbvMV" resolve="expr" />
@@ -256,7 +281,17 @@
   </node>
   <node concept="3p36aQ" id="4Eg8sgnc0RR">
     <property role="3GE5qa" value="stmt" />
-    <ref role="aqKnT" to="rav:7FEM1Kfpz1u" resolve="EmptyStatement" />
+    <ref role="aqKnT" to="rav:7FEM1Kfpz1u" resolve="BEmptyStatement" />
+  </node>
+  <node concept="24kQdi" id="6yAr3FnMBK$">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="rav:6yAr3FnMBKp" resolve="BType" />
+    <node concept="PMmxH" id="6yAr3FnMBKA" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VechU" id="6yAr3FnN3oe" role="3F10Kt">
+        <property role="Vb096" value="DARK_BLUE" />
+      </node>
+    </node>
   </node>
 </model>
 

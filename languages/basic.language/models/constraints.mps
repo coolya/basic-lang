@@ -8,6 +8,7 @@
   <imports>
     <import index="rav" ref="r:5dfc3e02-565a-434d-9e49-034b8d828033(basic.language.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -45,9 +46,14 @@
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="4Eg8sgnbOUe">
-    <ref role="1M2myG" to="rav:7FEM1KfpNQX" resolve="NumberLiteral" />
+    <ref role="1M2myG" to="rav:7FEM1KfpNQX" resolve="BNumberLiteral" />
     <node concept="EnEH3" id="4Eg8sgnbOUf" role="1MhHOB">
       <ref role="EomxK" to="rav:7FEM1KfpNQY" resolve="value" />
       <node concept="QB0g5" id="4Eg8sgnbOUh" role="QCWH9">
@@ -59,6 +65,28 @@
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="4Eg8sgnbRS3" role="37wK5m">
                   <property role="Xl_RC" value="[0-9]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6yAr3FnPPdn">
+    <property role="3GE5qa" value="stmt" />
+    <ref role="1M2myG" to="rav:7FEM1KfpyGE" resolve="BVariable" />
+    <node concept="EnEH3" id="6yAr3FnPPdo" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="6yAr3FnPPdq" role="QCWH9">
+        <node concept="3clFbS" id="6yAr3FnPPdr" role="2VODD2">
+          <node concept="3clFbF" id="6yAr3FnPPkI" role="3cqZAp">
+            <node concept="2OqwBi" id="6yAr3FnPPLx" role="3clFbG">
+              <node concept="1Wqviy" id="6yAr3FnPPkH" role="2Oq$k0" />
+              <node concept="liA8E" id="6yAr3FnPQ7_" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="6yAr3FnPQfA" role="37wK5m">
+                  <property role="Xl_RC" value="[a-z]*" />
                 </node>
               </node>
             </node>
