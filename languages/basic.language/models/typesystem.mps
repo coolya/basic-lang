@@ -703,5 +703,37 @@
       <ref role="1YaFvo" to="rav:7FEM1KfpyGE" resolve="BVariable" />
     </node>
   </node>
+  <node concept="1YbPZF" id="p58tcVAydG">
+    <property role="TrG5h" value="typeof_BVariableReference" />
+    <property role="3GE5qa" value="expr" />
+    <node concept="3clFbS" id="p58tcVAydH" role="18ibNy">
+      <node concept="1Z5TYs" id="p58tcVAysA" role="3cqZAp">
+        <node concept="mw_s8" id="p58tcVAysU" role="1ZfhKB">
+          <node concept="1Z2H0r" id="p58tcVAysQ" role="mwGJk">
+            <node concept="2OqwBi" id="p58tcVAy_j" role="1Z2MuG">
+              <node concept="1YBJjd" id="p58tcVAytk" role="2Oq$k0">
+                <ref role="1YBMHb" node="p58tcVAydJ" resolve="bVariableReference" />
+              </node>
+              <node concept="3TrEf2" id="p58tcVAyIa" role="2OqNvi">
+                <ref role="3Tt5mk" to="rav:p58tcV_Adq" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="p58tcVAysD" role="1ZfhK$">
+          <node concept="1Z2H0r" id="p58tcVAydW" role="mwGJk">
+            <node concept="1YBJjd" id="p58tcVAyfI" role="1Z2MuG">
+              <ref role="1YBMHb" node="p58tcVAydJ" resolve="bVariableReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="p58tcVAysZ" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="p58tcVAydJ" role="1YuTPh">
+      <property role="TrG5h" value="bVariableReference" />
+      <ref role="1YaFvo" to="rav:p58tcV_Adp" resolve="BVariableReference" />
+    </node>
+  </node>
 </model>
 
