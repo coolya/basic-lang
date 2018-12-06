@@ -10,6 +10,7 @@
     <import index="rav" ref="r:5dfc3e02-565a-434d-9e49-034b8d828033(basic.language.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="n00a" ref="r:404c2401-a7a1-4ef9-9e7d-dc5b25674969(basic.language.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -64,6 +65,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -153,6 +157,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -170,9 +175,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -207,7 +209,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="5TPyr2$QK2R">
-    <property role="TrG5h" value="check_Workbook" />
+    <property role="TrG5h" value="check_duplicateVariableNames" />
     <node concept="3clFbS" id="5TPyr2$QK2S" role="18ibNy">
       <node concept="3cpWs8" id="5TPyr2$QP1I" role="3cqZAp">
         <node concept="3cpWsn" id="5TPyr2$QP1J" role="3cpWs9">
@@ -285,10 +287,10 @@
         <node concept="2OqwBi" id="5TPyr2$QLS1" role="2GsD0m">
           <node concept="2OqwBi" id="5TPyr2$QKaI" role="2Oq$k0">
             <node concept="1YBJjd" id="5TPyr2$QK2Y" role="2Oq$k0">
-              <ref role="1YBMHb" node="5TPyr2$QK2U" resolve="workbook" />
+              <ref role="1YBMHb" node="5TPyr2$QK2U" resolve="bStatementContainer" />
             </node>
-            <node concept="3Tsc0h" id="5TPyr2$QKja" role="2OqNvi">
-              <ref role="3TtcxE" to="rav:7FEM1KfpyGJ" resolve="content" />
+            <node concept="2qgKlT" id="73mu$PKNak4" role="2OqNvi">
+              <ref role="37wK5l" to="n00a:p58tcVBktG" resolve="getStatements" />
             </node>
           </node>
           <node concept="v3k3i" id="5TPyr2$QN7d" role="2OqNvi">
@@ -300,8 +302,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5TPyr2$QK2U" role="1YuTPh">
-      <property role="TrG5h" value="workbook" />
-      <ref role="1YaFvo" to="rav:7FEM1KfpoUa" resolve="BWorkbook" />
+      <property role="TrG5h" value="bStatementContainer" />
+      <ref role="1YaFvo" to="rav:p58tcVAN2A" resolve="BStatementContainer" />
     </node>
   </node>
   <node concept="1YbPZF" id="5TPyr2$QYIB">
