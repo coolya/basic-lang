@@ -54,7 +54,6 @@
         <child id="8857111640020600955" name="right" index="1Pzg1B" />
       </concept>
       <concept id="8857111640020590469" name="basic.language.structure.BPlusExpression" flags="ng" index="1Pzlup" />
-      <concept id="8857111640020581132" name="basic.language.structure.BExpression" flags="ng" index="1Pzrcg" />
       <concept id="8857111640020565437" name="basic.language.structure.BNumberLiteral" flags="ng" index="1Pzvmx">
         <property id="8857111640020565438" name="value" index="1Pzvmy" />
       </concept>
@@ -106,12 +105,12 @@
     </node>
     <node concept="1PzecQ" id="p58tcVBXe$" role="1PzecN">
       <property role="TrG5h" value="bar" />
-      <node concept="1Pzlup" id="p58tcVC7C5" role="1Pzvns">
-        <node concept="XOOaa" id="p58tcVC7DH" role="1Pzg1B">
-          <ref role="XOOa9" node="5TPyr2$PTsV" resolve="y" />
-        </node>
+      <node concept="1Pzlup" id="73mu$PKLIgy" role="1Pzvns">
         <node concept="XOOaa" id="p58tcVC7BW" role="1Pzg1_">
           <ref role="XOOa9" node="4Eg8sgnbvKM" resolve="c" />
+        </node>
+        <node concept="XOOaa" id="p58tcVC7DH" role="1Pzg1B">
+          <ref role="XOOa9" node="5TPyr2$PTsV" resolve="y" />
         </node>
       </node>
     </node>
@@ -137,34 +136,31 @@
         </node>
       </node>
     </node>
-    <node concept="1PzecQ" id="p58tcVBT$n" role="1PzecN">
-      <property role="TrG5h" value="foo" />
-      <node concept="1Pzlup" id="p58tcVBTDq" role="1Pzvns">
-        <node concept="XOOaa" id="p58tcVBTCB" role="1Pzg1_">
-          <ref role="XOOa9" node="4Eg8sgnbvKM" resolve="c" />
-        </node>
-        <node concept="XOOaa" id="p58tcVBTHA" role="1Pzg1B">
-          <ref role="XOOa9" node="5TPyr2$PTsV" resolve="y" />
-        </node>
-      </node>
-    </node>
+    <node concept="1Pzfx2" id="73mu$PKJAkK" role="1PzecN" />
     <node concept="XT0WX" id="p58tcVCOCa" role="1PzecN">
-      <node concept="1PzecQ" id="p58tcVDm0y" role="XT0Vr">
-        <property role="TrG5h" value="innerx" />
-        <node concept="1Pzvmx" id="p58tcVDm0S" role="1Pzvns">
-          <property role="1Pzvmy" value="1" />
-        </node>
-      </node>
       <node concept="1PzecQ" id="p58tcVDogk" role="XT0Vr">
         <property role="TrG5h" value="x" />
         <node concept="1Pzvmx" id="p58tcVDogJ" role="1Pzvns">
           <property role="1Pzvmy" value="1" />
         </node>
       </node>
+      <node concept="1PzecQ" id="p58tcVDm0y" role="XT0Vr">
+        <property role="TrG5h" value="innerx" />
+        <node concept="1Pzvmx" id="p58tcVDm0S" role="1Pzvns">
+          <property role="1Pzvmy" value="1" />
+        </node>
+      </node>
+      <node concept="1tJtPY" id="73mu$PKMUTh" role="XT0Vr">
+        <node concept="XOOaa" id="73mu$PKMUTf" role="1tJtPZ">
+          <ref role="XOOa9" node="p58tcVDogk" resolve="x" />
+        </node>
+      </node>
       <node concept="1PzecQ" id="p58tcVDm1a" role="XT0Vr">
         <property role="TrG5h" value="y" />
-        <node concept="1Pzlup" id="p58tcVDm1T" role="1Pzvns">
-          <node concept="1Pzrcg" id="p58tcVDm1V" role="1Pzg1B" />
+        <node concept="1Pzlup" id="73mu$PKMRvW" role="1Pzvns">
+          <node concept="XOOaa" id="73mu$PKMRCV" role="1Pzg1B">
+            <ref role="XOOa9" node="p58tcVDogk" resolve="x" />
+          </node>
           <node concept="1Pzvmx" id="p58tcVDm1y" role="1Pzg1_">
             <property role="1Pzvmy" value="2" />
           </node>
