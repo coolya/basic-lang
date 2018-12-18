@@ -9,6 +9,13 @@
   <imports />
   <registry>
     <language id="daf560b3-c43d-4961-902e-597c9554436f" name="test.language">
+      <concept id="1715017586779249559" name="test.language.structure.BExecuteSingleTestCase" flags="ng" index="2ciENZ">
+        <reference id="1715017586779266343" name="suite" index="2ciADf" />
+        <reference id="1715017586779249560" name="test" index="2ciENK" />
+      </concept>
+      <concept id="1715017586779237000" name="test.language.structure.BExecuteTests" flags="ng" index="2ciHRw">
+        <reference id="1715017586779237001" name="testSuite" index="2ciHRx" />
+      </concept>
       <concept id="451804528742085338" name="test.language.structure.BAssertStatement" flags="ng" index="XO9c9">
         <child id="451804528742085587" name="expr" index="XO980" />
       </concept>
@@ -116,11 +123,11 @@
     </node>
     <node concept="1PzecQ" id="6yAr3FnPSNF" role="1PzecN">
       <property role="TrG5h" value="x" />
-      <node concept="2Z6zp$" id="p58tcV_2Zb" role="1Pzvns">
-        <node concept="1Pzvmx" id="p58tcV_2Zw" role="1Pzg1B">
+      <node concept="2Z6zp$" id="3BjE0Ctaq5g" role="1Pzvns">
+        <node concept="1Pzvmx" id="6yAr3FnPSPC" role="1Pzg1_">
           <property role="1Pzvmy" value="4" />
         </node>
-        <node concept="1Pzvmx" id="6yAr3FnPSPC" role="1Pzg1_">
+        <node concept="1Pzvmx" id="p58tcV_2Zw" role="1Pzg1B">
           <property role="1Pzvmy" value="4" />
         </node>
       </node>
@@ -151,7 +158,7 @@
         </node>
       </node>
       <node concept="1tJtPY" id="73mu$PKMUTh" role="XT0Vr">
-        <node concept="XOOaa" id="73mu$PKMUTf" role="1tJtPZ">
+        <node concept="XOOaa" id="1vcXQyrvaje" role="1tJtPZ">
           <ref role="XOOa9" node="p58tcVDogk" resolve="x" />
         </node>
       </node>
@@ -174,6 +181,13 @@
           <property role="1Pzvmy" value="1" />
         </node>
       </node>
+    </node>
+    <node concept="2ciHRw" id="1vcXQyrx_HC" role="1PzecN">
+      <ref role="2ciHRx" node="p58tcV_iLP" resolve="myTests" />
+    </node>
+    <node concept="2ciENZ" id="1vcXQyrxM8R" role="1PzecN">
+      <ref role="2ciENK" node="1vcXQyrxDO_" resolve="some name" />
+      <ref role="2ciADf" node="1vcXQyrxDO$" resolve="SomeOtherTests" />
     </node>
     <node concept="1Pzfx2" id="p58tcVAMQJ" role="1PzecN" />
   </node>
@@ -222,6 +236,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="XOh6C" id="1vcXQyrxDO$">
+    <property role="TrG5h" value="SomeOtherTests" />
+    <node concept="XOh6H" id="1vcXQyrxDO_" role="XOh5i">
+      <property role="TrG5h" value="some name" />
     </node>
   </node>
 </model>

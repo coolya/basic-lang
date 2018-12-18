@@ -323,5 +323,12 @@
       <ref role="PrY4T" node="p58tcVAN2A" resolve="BStatementContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1vcXQyrxgXC">
+    <property role="EcuMT" value="1715017586779164520" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="BDoubleType" />
+    <property role="34LRSv" value="double" />
+    <ref role="1TJDcQ" node="6yAr3FnMBKp" resolve="BType" />
+  </node>
 </model>
 

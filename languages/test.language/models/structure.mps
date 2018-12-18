@@ -85,5 +85,38 @@
       <ref role="20lvS9" to="rav:7FEM1KfpRGc" resolve="BExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1vcXQyrxyE8">
+    <property role="EcuMT" value="1715017586779237000" />
+    <property role="TrG5h" value="BExecuteTests" />
+    <property role="34LRSv" value="execute tests" />
+    <ref role="1TJDcQ" to="rav:7FEM1KfpyRI" resolve="BStatement" />
+    <node concept="1TJgyj" id="1vcXQyrxyE9" role="1TKVEi">
+      <property role="IQ2ns" value="1715017586779237001" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="testSuite" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="p58tcV_31V" resolve="BTestSuite" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vcXQyrx_In">
+    <property role="EcuMT" value="1715017586779249559" />
+    <property role="TrG5h" value="BExecuteSingleTestCase" />
+    <property role="34LRSv" value="execute test" />
+    <ref role="1TJDcQ" to="rav:7FEM1KfpyRI" resolve="BStatement" />
+    <node concept="1TJgyj" id="1vcXQyrx_Io" role="1TKVEi">
+      <property role="IQ2ns" value="1715017586779249560" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="test" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="p58tcV_31Y" resolve="BTestCase" />
+    </node>
+    <node concept="1TJgyj" id="1vcXQyrxDOB" role="1TKVEi">
+      <property role="IQ2ns" value="1715017586779266343" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="suite" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="p58tcV_31V" resolve="BTestSuite" />
+    </node>
+  </node>
 </model>
 
