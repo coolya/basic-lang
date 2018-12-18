@@ -85,7 +85,7 @@
     <node concept="1TJgyj" id="6yAr3FnMcxO" role="1TKVEi">
       <property role="IQ2ns" value="7540833626062637172" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
+      <property role="20kJfa" value="declaredType" />
       <ref role="20lvS9" node="6yAr3FnMBKp" resolve="BType" />
     </node>
     <node concept="PrWs8" id="7FEM1KfpyGH" role="PzmwI">

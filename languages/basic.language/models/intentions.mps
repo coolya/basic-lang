@@ -161,7 +161,7 @@
             <node concept="2OqwBi" id="1vcXQyrvoL1" role="2Oq$k0">
               <node concept="2Sf5sV" id="1vcXQyrvoCy" role="2Oq$k0" />
               <node concept="3TrEf2" id="1vcXQyrvoVf" role="2OqNvi">
-                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="type" />
+                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="declaredType" />
               </node>
             </node>
             <node concept="zfrQC" id="1vcXQyrvpyT" role="2OqNvi" />
@@ -176,7 +176,7 @@
             <node concept="2OqwBi" id="1vcXQyrvnmk" role="2Oq$k0">
               <node concept="2Sf5sV" id="1vcXQyrvn8i" role="2Oq$k0" />
               <node concept="3TrEf2" id="1vcXQyrvnBr" role="2OqNvi">
-                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="type" />
+                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="declaredType" />
               </node>
             </node>
             <node concept="3w_OXm" id="1vcXQyrvot6" role="2OqNvi" />
@@ -240,7 +240,7 @@
             <node concept="2OqwBi" id="1vcXQyrxeTW" role="37vLTJ">
               <node concept="2Sf5sV" id="1vcXQyrxeLd" role="2Oq$k0" />
               <node concept="3TrEf2" id="1vcXQyrxf7K" role="2OqNvi">
-                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="type" />
+                <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="declaredType" />
               </node>
             </node>
           </node>
