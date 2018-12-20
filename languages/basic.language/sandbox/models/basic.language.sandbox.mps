@@ -9,6 +9,9 @@
   <imports />
   <registry>
     <language id="daf560b3-c43d-4961-902e-597c9554436f" name="test.language">
+      <concept id="1715017586779237000" name="test.language.structure.BExecuteTests" flags="ng" index="2ciHRw">
+        <reference id="1715017586779237001" name="testSuite" index="2ciHRx" />
+      </concept>
       <concept id="451804528742085338" name="test.language.structure.BAssertStatement" flags="ng" index="XO9c9">
         <child id="451804528742085587" name="expr" index="XO980" />
       </concept>
@@ -105,6 +108,9 @@
         </node>
       </node>
     </node>
+    <node concept="2ciHRw" id="2ciQVyO6K66" role="1PzecN">
+      <ref role="2ciHRx" node="p58tcV_iLP" resolve="myTests" />
+    </node>
   </node>
   <node concept="XOh6C" id="p58tcV_iLP">
     <property role="TrG5h" value="myTests" />
@@ -151,6 +157,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="XOh6H" id="2ciQVyO6M$o" role="XOh5i">
+      <property role="TrG5h" value="testx" />
     </node>
   </node>
   <node concept="XOh6C" id="1vcXQyrxDO$">
