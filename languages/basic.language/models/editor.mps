@@ -30,6 +30,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -129,6 +130,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="7FEM1KfpzfJ">
@@ -176,16 +180,9 @@
   <node concept="24kQdi" id="7FEM1KfpFl5">
     <ref role="1XX52x" to="rav:7FEM1KfpoUa" resolve="BWorkbook" />
     <node concept="3EZMnI" id="7FEM1KfpFl7" role="2wV5jI">
-      <node concept="3EZMnI" id="7FEM1KfpGPu" role="3EZMnx">
-        <node concept="2iRfu4" id="7FEM1KfpGPv" role="2iSdaV" />
-        <node concept="3F0ifn" id="7FEM1KfpFlw" role="3EZMnx">
-          <property role="3F0ifm" value="Workbook" />
-        </node>
-        <node concept="3F0A7n" id="7FEM1KfpGPB" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
+      <node concept="PMmxH" id="5dc9LKIUOiE" role="3EZMnx">
+        <ref role="PMmxG" node="5dc9LKIUOi2" resolve="workbookHeader" />
       </node>
-      <node concept="3F0ifn" id="7FEM1KfpKm3" role="3EZMnx" />
       <node concept="3F2HdR" id="7FEM1KfpIaP" role="3EZMnx">
         <ref role="1NtTu8" to="rav:7FEM1KfpyGJ" resolve="content" />
         <node concept="2iRkQZ" id="7FEM1KfpIaR" role="2czzBx" />
@@ -362,6 +359,23 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5dc9LKIUOi2">
+    <property role="TrG5h" value="workbookHeader" />
+    <ref role="1XX52x" to="rav:7FEM1KfpoUa" resolve="BWorkbook" />
+    <node concept="3EZMnI" id="5dc9LKIUOi4" role="2wV5jI">
+      <node concept="3EZMnI" id="5dc9LKIUOib" role="3EZMnx">
+        <node concept="2iRfu4" id="5dc9LKIUOic" role="2iSdaV" />
+        <node concept="3F0ifn" id="5dc9LKIUOid" role="3EZMnx">
+          <property role="3F0ifm" value="Workbook" />
+        </node>
+        <node concept="3F0A7n" id="5dc9LKIUOie" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5dc9LKIUOif" role="3EZMnx" />
+      <node concept="2iRkQZ" id="5dc9LKIUOi7" role="2iSdaV" />
     </node>
   </node>
 </model>
