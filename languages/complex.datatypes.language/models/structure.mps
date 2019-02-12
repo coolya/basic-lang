@@ -93,5 +93,10 @@
       <ref role="20lvS9" node="5dc9LKITtJI" resolve="EntityDefinition" />
     </node>
   </node>
+  <node concept="1TIwiD" id="67lKJ3aYMDU">
+    <property role="EcuMT" value="7049755131171777146" />
+    <property role="TrG5h" value="MySpecialEntityDefinition" />
+    <ref role="1TJDcQ" node="5dc9LKITtJI" resolve="EntityDefinition" />
+  </node>
 </model>
 
