@@ -10,21 +10,7 @@
   </languages>
   <imports />
   <registry>
-    <language id="aaf52889-50ef-4e0e-8b06-000464e4e265" name="complex.datatypes.language">
-      <concept id="6002215405377720563" name="complex.datatypes.language.structure.EntityType" flags="ng" index="1XDFvJ">
-        <reference id="6002215405377720564" name="entity" index="1XDFvC" />
-      </concept>
-      <concept id="6002215405377412078" name="complex.datatypes.language.structure.EntityDefinition" flags="ng" index="1XEvNM">
-        <child id="6002215405377412132" name="members" index="1XEvGS" />
-      </concept>
-      <concept id="6002215405377492498" name="complex.datatypes.language.structure.EntityMember" flags="ng" index="1XEN4e">
-        <child id="6002215405377514926" name="type" index="1XEOEM" />
-      </concept>
-    </language>
     <language id="daf560b3-c43d-4961-902e-597c9554436f" name="test.language">
-      <concept id="1715017586779237000" name="test.language.structure.BExecuteTests" flags="ng" index="2ciHRw">
-        <reference id="1715017586779237001" name="testSuite" index="2ciHRx" />
-      </concept>
       <concept id="451804528742085338" name="test.language.structure.BAssertStatement" flags="ng" index="XO9c9">
         <child id="451804528742085587" name="expr" index="XO980" />
       </concept>
@@ -65,8 +51,8 @@
       </concept>
       <concept id="7540833626061822558" name="basic.language.structure.BGreaterThanExpression" flags="ng" index="2Z6zp$" />
       <concept id="7540833626062111305" name="basic.language.structure.BLowerToExpression" flags="ng" index="2ZpETN" />
-      <concept id="7540833626062748714" name="basic.language.structure.BBooleanType" flags="ng" index="2Zr10g" />
       <concept id="7540833626062748712" name="basic.language.structure.BIntegerType" flags="ng" index="2Zr10i" />
+      <concept id="7540833626062748713" name="basic.language.structure.BStringType" flags="ng" index="2Zr10j" />
       <concept id="8857111640020672226" name="basic.language.structure.BStringLiteral" flags="ng" index="1PwxrY">
         <property id="8857111640020672227" name="value" index="1PwxrZ" />
       </concept>
@@ -91,7 +77,7 @@
     </language>
   </registry>
   <node concept="1PzOqm" id="7FEM1KfpyGD">
-    <property role="TrG5h" value="myWorkbook" />
+    <property role="TrG5h" value="myWorkbookWithANewName" />
     <node concept="1PzecQ" id="4Eg8sgnbvKM" role="1PzecN">
       <property role="TrG5h" value="c" />
       <node concept="1Pzg0S" id="6yAr3FnLWSB" role="1Pzvns">
@@ -124,12 +110,14 @@
           <property role="1Pzvmy" value="10" />
         </node>
       </node>
+      <node concept="2Zr10i" id="53vVceDbboB" role="2ZrEhe" />
     </node>
     <node concept="1PzecQ" id="3BjE0Ctc5JH" role="1PzecN">
       <property role="TrG5h" value="z" />
       <node concept="1PwxrY" id="3BjE0Ctc5K9" role="1Pzvns">
         <property role="1PwxrZ" value="some string value" />
       </node>
+      <node concept="2Zr10j" id="53vVceDbbqc" role="2ZrEhe" />
     </node>
     <node concept="1PzecQ" id="3BjE0CtdbA1" role="1PzecN">
       <property role="TrG5h" value="x" />
@@ -151,41 +139,16 @@
           <ref role="XOOa9" node="5TPyr2$PTsV" resolve="y" />
         </node>
       </node>
+      <node concept="2Zr10i" id="53vVceDc8u6" role="2ZrEhe" />
+    </node>
+    <node concept="1PzecQ" id="53vVceDdbFW" role="1PzecN">
+      <property role="TrG5h" value="xx" />
+      <node concept="1Pzvmx" id="53vVceDdbGP" role="1Pzvns">
+        <property role="1Pzvmy" value="12" />
+      </node>
+      <node concept="2Zr10i" id="53vVceDdbH8" role="2ZrEhe" />
     </node>
     <node concept="1Pzfx2" id="5dc9LKITTwR" role="1PzecN" />
-    <node concept="2ciHRw" id="2ciQVyO6K66" role="1PzecN">
-      <ref role="2ciHRx" node="p58tcV_iLP" resolve="myTests" />
-    </node>
-    <node concept="1Pzfx2" id="5dc9LKIUOcH" role="1PzecN" />
-    <node concept="1XEvNM" id="5dc9LKITFEK" role="1PzecN">
-      <property role="TrG5h" value="myEntity" />
-      <node concept="1XEN4e" id="5dc9LKITMj5" role="1XEvGS">
-        <property role="TrG5h" value="myMember" />
-        <node concept="2Zr10g" id="5dc9LKITTtM" role="1XEOEM" />
-      </node>
-      <node concept="1XEN4e" id="5dc9LKITMjb" role="1XEvGS">
-        <property role="TrG5h" value="mySecondMember" />
-        <node concept="2Zr10g" id="67lKJ3aX$Gy" role="1XEOEM" />
-      </node>
-      <node concept="1XEN4e" id="5dc9LKITO2c" role="1XEvGS">
-        <property role="TrG5h" value="myThirdMember" />
-        <node concept="2Zr10i" id="67lKJ3aX$G_" role="1XEOEM" />
-      </node>
-      <node concept="1XEN4e" id="5dc9LKIUD3B" role="1XEvGS">
-        <property role="TrG5h" value="reference" />
-        <node concept="1XDFvJ" id="4eAnXswk5Qg" role="1XEOEM">
-          <ref role="1XDFvC" node="5dc9LKITTvi" resolve="mySecondEntity2d" />
-        </node>
-      </node>
-    </node>
-    <node concept="1Pzfx2" id="5dc9LKITTtY" role="1PzecN" />
-    <node concept="1XEvNM" id="5dc9LKITTvi" role="1PzecN">
-      <property role="TrG5h" value="mySecondEntity2d" />
-      <node concept="1XEN4e" id="5dc9LKITTwb" role="1XEvGS">
-        <property role="TrG5h" value="someName" />
-        <node concept="2Zr10g" id="5dc9LKITTwh" role="1XEOEM" />
-      </node>
-    </node>
     <node concept="37mRI7" id="5dc9LKIWahV" role="lGtFl">
       <node concept="37mRIm" id="5dc9LKIWahW" role="37mRID">
         <property role="37mO49" value="myEntity" />
@@ -287,18 +250,6 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-    </node>
-    <node concept="1XEvNM" id="67lKJ3aSHTF" role="1PzecN">
-      <property role="TrG5h" value="ANewEntity" />
-      <node concept="1XEN4e" id="67lKJ3aUDEh" role="1XEvGS">
-        <property role="TrG5h" value="someName" />
-        <node concept="1XDFvJ" id="67lKJ3aUDEi" role="1XEOEM">
-          <ref role="1XDFvC" node="67lKJ3aUbrr" resolve="somemore" />
-        </node>
-      </node>
-    </node>
-    <node concept="1XEvNM" id="67lKJ3aUbrr" role="1PzecN">
-      <property role="TrG5h" value="somemore" />
     </node>
   </node>
   <node concept="XOh6C" id="p58tcV_iLP">

@@ -98,6 +98,9 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -164,6 +167,7 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -735,6 +739,35 @@
     <node concept="1YaCAy" id="p58tcVAydJ" role="1YuTPh">
       <property role="TrG5h" value="bVariableReference" />
       <ref role="1YaFvo" to="rav:p58tcV_Adp" resolve="BVariableReference" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="53vVceDbcjS">
+    <property role="3GE5qa" value="stmt" />
+    <property role="TrG5h" value="check_variableHasDeclaredType" />
+    <node concept="3clFbS" id="53vVceDbcjT" role="18ibNy">
+      <node concept="2Mj0R9" id="53vVceDbcEK" role="3cqZAp">
+        <node concept="2OqwBi" id="53vVceDbd_6" role="2MkoU_">
+          <node concept="2OqwBi" id="53vVceDbcQF" role="2Oq$k0">
+            <node concept="1YBJjd" id="53vVceDbcFc" role="2Oq$k0">
+              <ref role="1YBMHb" node="53vVceDbcjV" resolve="bVariable" />
+            </node>
+            <node concept="3TrEf2" id="53vVceDbd47" role="2OqNvi">
+              <ref role="3Tt5mk" to="rav:6yAr3FnMcxO" resolve="declaredType" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="53vVceDbegL" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="53vVceDbenb" role="2MkJ7o">
+          <property role="Xl_RC" value="variables without declared types are not supported" />
+        </node>
+        <node concept="1YBJjd" id="53vVceDbet_" role="2OEOjV">
+          <ref role="1YBMHb" node="53vVceDbcjV" resolve="bVariable" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="53vVceDbcjV" role="1YuTPh">
+      <property role="TrG5h" value="bVariable" />
+      <ref role="1YaFvo" to="rav:7FEM1KfpyGE" resolve="BVariable" />
     </node>
   </node>
 </model>
