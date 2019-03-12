@@ -49,10 +49,15 @@
       <concept id="451804528742130521" name="basic.language.structure.BVariableReference" flags="ng" index="XOOaa">
         <reference id="451804528742130522" name="variable" index="XOOa9" />
       </concept>
+      <concept id="451804528742837998" name="basic.language.structure.BIfStatement" flags="ng" index="XT0WX">
+        <child id="451804528742838022" name="condition" index="XT0Vl" />
+        <child id="451804528742838024" name="then" index="XT0Vr" />
+      </concept>
       <concept id="7540833626061822558" name="basic.language.structure.BGreaterThanExpression" flags="ng" index="2Z6zp$" />
       <concept id="7540833626062111305" name="basic.language.structure.BLowerToExpression" flags="ng" index="2ZpETN" />
       <concept id="7540833626062748712" name="basic.language.structure.BIntegerType" flags="ng" index="2Zr10i" />
       <concept id="7540833626062748713" name="basic.language.structure.BStringType" flags="ng" index="2Zr10j" />
+      <concept id="8857111640020670638" name="basic.language.structure.BEqualsExpression" flags="ng" index="1Pwx2M" />
       <concept id="8857111640020672226" name="basic.language.structure.BStringLiteral" flags="ng" index="1PwxrY">
         <property id="8857111640020672227" name="value" index="1PwxrZ" />
       </concept>
@@ -149,6 +154,23 @@
       <node concept="2Zr10i" id="53vVceDdbH8" role="2ZrEhe" />
     </node>
     <node concept="1Pzfx2" id="5dc9LKITTwR" role="1PzecN" />
+    <node concept="XT0WX" id="7oR5Mo33fOJ" role="1PzecN">
+      <node concept="1Pwx2M" id="7oR5Mo34wZA" role="XT0Vl">
+        <node concept="XOOaa" id="7oR5Mo34x1d" role="1Pzg1B">
+          <ref role="XOOa9" node="4Eg8sgnbvKM" resolve="c" />
+        </node>
+        <node concept="XOOaa" id="7oR5Mo34wY3" role="1Pzg1_">
+          <ref role="XOOa9" node="4Eg8sgnbvKM" resolve="c" />
+        </node>
+      </node>
+      <node concept="1PzecQ" id="7oR5Mo34x3o" role="XT0Vr">
+        <property role="TrG5h" value="xxx" />
+        <node concept="1Pzvmx" id="7oR5Mo34x3G" role="1Pzvns">
+          <property role="1Pzvmy" value="23" />
+        </node>
+        <node concept="2Zr10i" id="7oR5Mo34x4G" role="2ZrEhe" />
+      </node>
+    </node>
     <node concept="37mRI7" id="5dc9LKIWahV" role="lGtFl">
       <node concept="37mRIm" id="5dc9LKIWahW" role="37mRID">
         <property role="37mO49" value="myEntity" />

@@ -88,3 +88,8 @@ val buildLanguages = tasks.register<BuildLanguages>("buildLanguages") {
     script = file("$projectDir/scripts/build.xml")
     dependsOn(buildScriptWrapper)
 }
+
+val testLanguages = tasks.register<TestLanguages>("testLanguages") {
+    script = file("$projectDir/scripts/build-tests.xml")
+    dependsOn(buildLanguages)
+}
