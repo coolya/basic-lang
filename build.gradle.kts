@@ -5,6 +5,7 @@
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
 import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.GenerateLibrariesXml
 import de.itemis.mps.gradle.TestLanguages
 
 buildscript {
@@ -41,6 +42,18 @@ dependencies {
     mpsExt("de.itemis.mps:extensions:2018.3.+")
 }
 
+tasks.register("resolveAndLockAll") {
+    doFirst {
+        require(gradle.startParameter.isWriteDependencyLocks)
+    }
+    doLast {
+        configurations.filter {
+            // Add any custom filtering on the configurations to be resolved
+            it.isCanBeResolved
+        }.forEach { it.resolve() }
+    }
+}
+
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = listOf("-Dmps_home=$mpsHomeDir", "-Dextensions.home=$mpsExtDir/de.itemis.mps.extensions")
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = files(antLib.resolve())
 
@@ -52,6 +65,17 @@ val resolveMps = tasks.register<Copy>("resolveMps") {
 val resolveExt = tasks.register<Copy>("resolveExt") {
     from(mpsExt.resolve().map { zipTree(it) })
     into(mpsExtDir)
+}
+
+val createProjectLib = tasks.register<GenerateLibrariesXml>("generateLibs") {
+    defaults = file("projectlibraries.properties")
+    setOverrides(file("projectlibraries.overrides.properties"))
+    destination = file(".mps/libraries.xml")
+}
+
+val setup = tasks.register("setup") {
+    dependsOn(resolveExt)
+    dependsOn(createProjectLib)
 }
 
 val buildScriptWrapper = tasks.register<BuildLanguages>("buildScriptWrapper") {

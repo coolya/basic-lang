@@ -14,3 +14,4 @@ test_gen
 test_gen.caches
 scripts/build.xml
 lib/de.itemis.mps.extensions/
+.mps/libraries.xml
