@@ -39,7 +39,7 @@ val mpsExtDir = file("$buildDir/mps-ext")
 dependencies {
     mps("com.jetbrains:mps:$mpsVersion")
     antLib("org.apache.ant:ant-junit:1.10.1")
-    mpsExt("de.itemis.mps:extensions:2018.3.+")
+    mpsExt("com.mbeddr:platform:1.2.+")
 }
 
 tasks.register("resolveAndLockAll") {
