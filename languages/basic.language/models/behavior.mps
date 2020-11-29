@@ -2,7 +2,7 @@
 <model ref="r:404c2401-a7a1-4ef9-9e7d-dc5b25674969(basic.language.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -61,7 +61,7 @@
   </registry>
   <node concept="13h7C7" id="7FEM1KfpZvU">
     <property role="3GE5qa" value="expr.binary" />
-    <ref role="13h7C2" to="rav:7FEM1KfpWxS" resolve="BinaryExpression" />
+    <ref role="13h7C2" to="rav:7FEM1KfpWxS" resolve="BBinaryExpression" />
     <node concept="13i0hz" id="5TPyr2$PqbJ" role="13h7CS">
       <property role="TrG5h" value="leftAssociative" />
       <property role="2Ki8OM" value="true" />
@@ -96,21 +96,21 @@
   </node>
   <node concept="13h7C7" id="7FEM1KfpZxj">
     <property role="3GE5qa" value="expr.binary" />
-    <ref role="13h7C2" to="rav:7FEM1KfpTY5" resolve="PlusExpression" />
+    <ref role="13h7C2" to="rav:7FEM1KfpTY5" resolve="BPlusExpression" />
     <node concept="13hLZK" id="7FEM1KfpZxk" role="13h7CW">
       <node concept="3clFbS" id="7FEM1KfpZxl" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="7FEM1KfpZyf">
     <property role="3GE5qa" value="expr.binary" />
-    <ref role="13h7C2" to="rav:7FEM1KfpWw$" resolve="MinusExpression" />
+    <ref role="13h7C2" to="rav:7FEM1KfpWw$" resolve="BMinusExpression" />
     <node concept="13hLZK" id="7FEM1KfpZyg" role="13h7CW">
       <node concept="3clFbS" id="7FEM1KfpZyh" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="7FEM1KfpZzb">
     <property role="3GE5qa" value="expr.binary" />
-    <ref role="13h7C2" to="rav:7FEM1KfpWwE" resolve="MulExpression" />
+    <ref role="13h7C2" to="rav:7FEM1KfpWwE" resolve="BMulExpression" />
     <node concept="13hLZK" id="7FEM1KfpZzc" role="13h7CW">
       <node concept="3clFbS" id="7FEM1KfpZzd" role="2VODD2" />
     </node>

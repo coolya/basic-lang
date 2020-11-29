@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
   </languages>
   <imports />
   <registry>
@@ -15,27 +15,27 @@
     <language id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language">
       <concept id="7540833626062111305" name="basic.language.structure.BLowerToExpression" flags="ng" index="2ZpETN" />
       <concept id="7540833626062748714" name="basic.language.structure.BBooleanType" flags="ng" index="2Zr10g" />
-      <concept id="5372831481539198138" name="basic.language.structure.BExpressionStatement" flags="ng" index="1tJtPY">
+      <concept id="5372831481539198138" name="basic.language.structure.ExpressionStatement" flags="ng" index="1tJtPY">
         <child id="5372831481539198139" name="expr" index="1tJtPZ" />
       </concept>
-      <concept id="8857111640020672226" name="basic.language.structure.BStringLiteral" flags="ng" index="1PwxrY">
+      <concept id="8857111640020672226" name="basic.language.structure.StringLiteral" flags="ng" index="1PwxrY">
         <property id="8857111640020672227" name="value" index="1PwxrZ" />
       </concept>
-      <concept id="8857111640020495146" name="basic.language.structure.BVariable" flags="ng" index="1PzecQ">
+      <concept id="8857111640020495146" name="basic.language.structure.Variable" flags="ng" index="1PzecQ">
         <child id="7540833626062637172" name="type" index="2ZrEhe" />
         <child id="8857111640020565440" name="value" index="1Pzvns" />
       </concept>
-      <concept id="8857111640020600874" name="basic.language.structure.BMulExpression" flags="ng" index="1Pzg0Q" />
-      <concept id="8857111640020600868" name="basic.language.structure.BMinusExpression" flags="ng" index="1Pzg0S" />
-      <concept id="8857111640020600952" name="basic.language.structure.BBinaryExpression" flags="ng" index="1Pzg1$">
+      <concept id="8857111640020600874" name="basic.language.structure.MulExpression" flags="ng" index="1Pzg0Q" />
+      <concept id="8857111640020600868" name="basic.language.structure.MinusExpression" flags="ng" index="1Pzg0S" />
+      <concept id="8857111640020600952" name="basic.language.structure.BinaryExpression" flags="ng" index="1Pzg1$">
         <child id="8857111640020600953" name="left" index="1Pzg1_" />
         <child id="8857111640020600955" name="right" index="1Pzg1B" />
       </concept>
-      <concept id="8857111640020590469" name="basic.language.structure.BPlusExpression" flags="ng" index="1Pzlup" />
-      <concept id="8857111640020565437" name="basic.language.structure.BNumberLiteral" flags="ng" index="1Pzvmx">
+      <concept id="8857111640020590469" name="basic.language.structure.PlusExpression" flags="ng" index="1Pzlup" />
+      <concept id="8857111640020565437" name="basic.language.structure.NumberLiteral" flags="ng" index="1Pzvmx">
         <property id="8857111640020565438" name="value" index="1Pzvmy" />
       </concept>
-      <concept id="8857111640020455050" name="basic.language.structure.BWorkbook" flags="ng" index="1PzOqm">
+      <concept id="8857111640020455050" name="basic.language.structure.Workbook" flags="ng" index="1PzOqm">
         <child id="8857111640020495151" name="content" index="1PzecN" />
       </concept>
     </language>
