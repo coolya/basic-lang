@@ -2,7 +2,7 @@
 <model ref="r:bb5b2c84-86d2-412e-bf91-fb29b3346a01(test.language.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -45,9 +45,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="p58tcV_321" role="1TKVEi">
       <property role="IQ2ns" value="451804528741986433" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tests" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="p58tcV_31Y" resolve="BTestCase" />
     </node>
     <node concept="PrWs8" id="p58tcV_31W" role="PzmwI">
@@ -60,9 +60,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="p58tcV_34p" role="1TKVEi">
       <property role="IQ2ns" value="451804528741986585" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="rav:7FEM1KfpyRI" resolve="BStatement" />
     </node>
     <node concept="PrWs8" id="p58tcV_31Z" role="PzmwI">
@@ -79,9 +79,9 @@
     <ref role="1TJDcQ" to="rav:7FEM1KfpyRI" resolve="BStatement" />
     <node concept="1TJgyj" id="p58tcV_rfj" role="1TKVEi">
       <property role="IQ2ns" value="451804528742085587" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="rav:7FEM1KfpRGc" resolve="BExpression" />
     </node>
   </node>
@@ -92,9 +92,8 @@
     <ref role="1TJDcQ" to="rav:7FEM1KfpyRI" resolve="BStatement" />
     <node concept="1TJgyj" id="1vcXQyrxyE9" role="1TKVEi">
       <property role="IQ2ns" value="1715017586779237001" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="testSuite" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="p58tcV_31V" resolve="BTestSuite" />
     </node>
   </node>
@@ -105,16 +104,14 @@
     <ref role="1TJDcQ" to="rav:7FEM1KfpyRI" resolve="BStatement" />
     <node concept="1TJgyj" id="1vcXQyrx_Io" role="1TKVEi">
       <property role="IQ2ns" value="1715017586779249560" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="test" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="p58tcV_31Y" resolve="BTestCase" />
     </node>
     <node concept="1TJgyj" id="1vcXQyrxDOB" role="1TKVEi">
       <property role="IQ2ns" value="1715017586779266343" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="suite" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="p58tcV_31V" resolve="BTestSuite" />
     </node>
   </node>

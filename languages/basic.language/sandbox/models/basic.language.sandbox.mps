@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="daf560b3-c43d-4961-902e-597c9554436f" name="test.language" version="0" />
   </languages>
   <imports />
@@ -35,7 +35,7 @@
         <property id="8857111640020672227" name="value" index="1PwxrZ" />
       </concept>
       <concept id="8857111640020495146" name="basic.language.structure.BVariable" flags="ng" index="1PzecQ">
-        <child id="7540833626062637172" name="declaredType" index="2ZrEhe" />
+        <child id="7540833626062637172" name="type" index="2ZrEhe" />
         <child id="8857111640020565440" name="value" index="1Pzvns" />
       </concept>
       <concept id="8857111640020600874" name="basic.language.structure.BMulExpression" flags="ng" index="1Pzg0Q" />
