@@ -2,7 +2,7 @@
 <model ref="r:094d684c-3813-46f0-ba3e-34fe8f0d7992(basic.language.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -77,9 +77,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -87,6 +85,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -100,9 +101,6 @@
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
-      </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -131,6 +129,9 @@
       </concept>
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -260,7 +261,7 @@
                     <property role="Xl_RC" value="duplicate name: " />
                   </node>
                 </node>
-                <node concept="2GrUjf" id="5TPyr2$QSov" role="2OEOjV">
+                <node concept="2GrUjf" id="5TPyr2$QSov" role="1urrMF">
                   <ref role="2Gs0qQ" node="5TPyr2$QNbv" resolve="variable" />
                 </node>
               </node>
@@ -418,8 +419,10 @@
                             <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                             <node concept="2pJxcG" id="6yAr3FnLJkX" role="2pJxcM">
                               <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                              <node concept="Xl_RD" id="6yAr3FnLJlv" role="2pJxcZ">
-                                <property role="Xl_RC" value="operation not supported" />
+                              <node concept="WxPPo" id="2JVVhDGGNDP" role="28ntcv">
+                                <node concept="Xl_RD" id="6yAr3FnLJlv" role="WxPPp">
+                                  <property role="Xl_RC" value="operation not supported" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -437,7 +440,7 @@
                       <node concept="Xl_RD" id="6yAr3FnLMcr" role="2MkJ7o">
                         <property role="Xl_RC" value="operation not supported" />
                       </node>
-                      <node concept="1YBJjd" id="6yAr3FnLMef" role="2OEOjV">
+                      <node concept="1YBJjd" id="6yAr3FnLMef" role="1urrMF">
                         <ref role="1YBMHb" node="6yAr3FnL0ik" resolve="binaryExpression" />
                       </node>
                     </node>

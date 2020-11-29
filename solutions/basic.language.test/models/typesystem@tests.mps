@@ -2,10 +2,10 @@
 <model ref="r:8f6c85af-2411-4f32-a5c1-30860169e49f(basic.language.test.typesystem@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
   </languages>
   <imports>
     <import index="815c" ref="r:094d684c-3813-46f0-ba3e-34fe8f0d7992(basic.language.typesystem)" />
@@ -28,8 +28,8 @@
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
-        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
@@ -296,25 +296,29 @@
   </node>
   <node concept="LiM7Y" id="73mu$PKNrB$">
     <property role="TrG5h" value="myTestCase" />
-    <node concept="1PzOqm" id="73mu$PKNrBB" role="LiRBU">
-      <property role="TrG5h" value="myWorkbook" />
-      <node concept="LIFWc" id="73mu$PKNrBZ" role="lGtFl">
-        <property role="ZRATv" value="true" />
-        <property role="OXtK3" value="true" />
-        <property role="p6zMq" value="0" />
-        <property role="p6zMs" value="0" />
-        <property role="LIFWd" value="empty_content" />
-      </node>
-    </node>
-    <node concept="1PzOqm" id="73mu$PKNrBF" role="LiZbd">
-      <property role="TrG5h" value="myWorkbook" />
-      <node concept="1PzecQ" id="73mu$PKNrBN" role="1PzecN">
-        <node concept="1Pzrcg" id="73mu$PKNrBO" role="1Pzvns" />
-      </node>
-    </node>
     <node concept="3clFbS" id="73mu$PKNrC3" role="LjaKd">
       <node concept="2TK7Tu" id="73mu$PKNrC2" role="3cqZAp">
         <property role="2TTd_B" value="var" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="2JVVhDGGNDS" role="25YQCW">
+      <node concept="1PzOqm" id="73mu$PKNrBB" role="1qenE9">
+        <property role="TrG5h" value="myWorkbook" />
+        <node concept="LIFWc" id="73mu$PKNrBZ" role="lGtFl">
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="empty_content" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2JVVhDGGNDT" role="25YQFr">
+      <node concept="1PzOqm" id="73mu$PKNrBF" role="1qenE9">
+        <property role="TrG5h" value="myWorkbook" />
+        <node concept="1PzecQ" id="73mu$PKNrBN" role="1PzecN">
+          <node concept="1Pzrcg" id="73mu$PKNrBO" role="1Pzvns" />
+        </node>
       </node>
     </node>
   </node>
